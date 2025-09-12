@@ -1,0 +1,675 @@
+@font-face {
+    font-family: navbar;
+    src: url(.\assets\fonts\Bebas_Neue);
+}
+@font-face {
+    font-family: logo;
+    src: url(.\assets\fonts\Asimovian,Bebas_Neue\Asimovian\Asimovian-Regular.ttf);
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.15);  /* transparent white */
+  backdrop-filter: blur(3px);            /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);    /* Safari support */
+  border-radius: 10px;                    /* smooth edges */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* soft shadow */
+}
+/* Apply only on large screens and above */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* a little below text */
+    width: 0;
+    height: 2px;
+    background-color: #0d6efd; /* Bootstrap primary color */
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+}
+#logo{
+    font-family: logo !important ;
+}
+
+/* this is section one code */
+.hero {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #0dcaf0, #0d6efd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
+  .hero-text {
+  margin: 20px auto 0 auto;   /* centers it */
+  max-width: 850px;           /* fixes width */
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn-outline:hover {
+  background: #f1f1f1;
+}
+
+@media (max-width: 992px) {
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+    max-width: 1000px;
+  }
+}
+
+/* this is marquee tag css */
+
+.logo-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  height: 60px; /* adjust logo size */
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.logo-track img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .logo-track {
+    gap: 30px;
+    animation-duration: 18s;
+  }
+  .logo-track img {
+    height: 40px;
+  }
+}
+/* this is css for black full width div */
+
+.stats-section {
+  background-color:black; /* black background */
+  width: 100%;
+}
+
+.stats-section h2 {
+  font-size: 2.5rem;
+}
+
+.stats-section p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .stats-section h2 {
+    font-size: 2rem;
+  }
+  .stats-section p {
+    font-size: 0.9rem;
+  }
+}
+/* css for the new text */
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  font-size: 3rem; /* bigger for laptop */
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.banner h1 .green {
+  color: #00a651;
+}
+
+.banner h1 .blue {
+  color: #0072ff;
+}
+
+.banner p {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.banner p strong {
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .banner h1 { font-size: 2.5rem; }
+  .banner p { font-size: 1.1rem; }
+}
+
+@media (max-width: 768px) {
+  .banner { padding: 60px 15px; }
+  .banner h1 { font-size: 2rem; }
+  .banner p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .banner h1 { font-size: 1.6rem; }
+  .banner p { font-size: 0.9rem; }
+}
+
+/* award css */
+
+
+.awards-section {
+  background-color: #000; /* full black background */
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.awards-section h2 {
+  font-size: 2.5rem;
+}
+
+.awards-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.award-img {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .awards-section h2 {
+    font-size: 2rem;
+  }
+  .awards-section p {
+    font-size: 1rem;
+  }
+  .award-img {
+    max-height: 90px;
+  }
+}
+
+
+
+
+
+
+/* this footer code */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-col p {
+  font-size: 14px;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo img {
+  display: block;
+}
+
+.footer-socials a {
+  margin-left: 12px;
+  display: inline-block;
+}
+
+/* .footer-socials img {
+  filter: brightness(0) invert(1); /* makes icons white 
+  transition: 0.3s;
+} 
+*/
+
+.footer-socials img:hover {
+  filter: none; /* show original color on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* this footer code */
+
+/* this is what we do  */
+.course-section {
+    background: #f3f2ef;
+    padding: 60px 2px;
+  }
+
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .course-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .course-text h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2d1d1d;
+  }
+
+  .course-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #333;
+  }
+
+  .course-text a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .course-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+  }
+
+  .course-image img {
+    max-width: 80%; /* smaller size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     transform: rotate(3deg); 
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .course-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .course-text {
+      max-width: 600px;
+    }
+
+    .course-image img {
+      max-width: 70%;
+      margin-top: 20px;
+    }
+  }
+/* this is end of in what we do */
+.lead-section {
+  background-color: #b64a00; /* orange background */
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.text-content a {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.image-content {
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .lead-section {
+    text-align: center;
+  }
+  .text-content h2 {
+    font-size: 2rem;
+  }
+  .text-content p {
+    font-size: 1rem;
+  }
+  .image-content {
+    margin-top: 30px;
+  }
+}
+
+/* Responsive for mobiles */
+@media (max-width: 480px) {
+  .text-content h2 {
+    font-size: 1.6rem;
+  }
+  .text-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* this is css for button  that redirect to top of page*/
+/* Default: Button at bottom-right */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For small screens (like 320px) move to center */
+@media (max-width: 400px) {
+  #scrollTopBtn {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+
+/* this is css for dashboard cards  */
+/* Background */
+.program-section {
+  background-color: #E8F6FC; /* same as screenshot */
+  padding: 40px 20px;
+}
+
+/* Card styling */
+.program-section .card {
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+}
+
+/* Make text clean */
+.program-section h5 {
+  margin-bottom: 8px;
+}
+
+.program-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .program-section {
+    padding: 20px 10px;
+  }
+  .program-section .card {
+    text-align: center;
+  }
+  .program-section img {
+    margin: 0 auto 12px auto;
+  }
+}
+/* this is css for the dashboard wide element */
+/* Section background */
+.stats-section {
+  background: #f4f4f4; /* light grey */
+  padding: 50px 20px;
+}
+
+/* Individual cards */
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image placeholder */
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text styling */
+.stat-card h4 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.stat-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive: make elements a bit wider */
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 25px 15px;
+  }
+  .stat-card h4 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-card {
+    padding: 20px 10px;
+  }
+  .stat-card h4 {
+    font-size: 22px;
+  }
+}
+/* this is review page css */
+/* Section background */
+.reviews-section {
+  background: #f7f7f7;
+  padding: 50px 20px;
+}
+
+/* Title */
+.reviews-section h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Cards */
+.review-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  color: #444;
+}
+
+/* Student image */
+.review-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ddd; /* placeholder */
+}
+
+/* Stars */
+.stars {
+  color: #f39c12;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .reviews-section {
+    padding: 30px 15px;
+  }
+  .review-card {
+    text-align: center;
+  }
+  .d-flex {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .review-img {
+    margin-bottom: 8px;
+  }
+}
+
+
