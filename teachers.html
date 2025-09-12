@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/bootstrap-5.3.8-dist/css/bootstrap.css">
+<body>
+
+
+ <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <!-- Brand (always on left) -->
+    <a id="logo" class="navbar-brand me-auto" href="#" style="font-size: 23px;">Speedup</a>
+
+    <!-- Toggler (always on right on small screens) -->
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <!-- Nav links -->
+      <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-auto" style="gap: 30px;">
+        <li class="nav-item">
+          <a class="nav-link active" href="dashboard.html" style="font-size: 25px; font-family: navbar">DASHBOARD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html" style="font-size: 25px; font-family: navbar">COURCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teachers.html" style="font-size: 25px; font-family: navbar">TEACHERS</a>
+        </li>
+      </ul>
+
+      <!-- Logout Button -->
+      <div class="d-flex gap-2">
+        <button id="logoutButton" class="btn btn-outline-danger hidden" type="button">
+          <a href="home.html" style="text-decoration: none;">Logout</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<style>
+  .course-img {
+    height: 200px;         /* Fixed height */
+    object-fit: cover;     /* Crop image nicely */
+    width: 100%;           /* Full width */
+  }
+</style>
+
+<div class="container my-5">
+  <h4 class="mb-4">Our Teachers</h4>
+  <div class="row g-4">
+<hr/>
+    <!-- Course Card 1 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-95 ">
+        <!-- Fixed-size Image -->
+        <div class="position-relative">
+          <img src="assets/img/teachers/1.png" class="course-img" alt="Course Image" style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete HTML tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 2 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-95">
+        <div class="position-relative">
+          <img src="/assets/img/teachers/2.png" class="course-img" alt="Course Image"style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete CSS tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 3 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-95">
+      
+        <div class="position-relative">
+          <img src="/assets/img/teachers/3.png" class="course-img" alt="Course Image"style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete JS tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- this is second row -->
+ <div class="container my-5">
+  <div class="row g-4">
+<hr/>
+    <!-- Course Card 1 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-95">
+    
+        <!-- Fixed-size Image -->
+        <div class="position-relative">
+          <img src="/assets/img/teachers/4.png" class="course-img" alt="Course Image"style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete HTML tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 2 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-95">
+       
+        <div class="position-relative">
+          <img src="/assets/img/teachers/5.png" class="course-img" alt="Course Image" style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete CSS tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 3 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-95">
+       
+        <div class="position-relative">
+          <img src="/assets/img/teachers/6.png" class="course-img" alt="Course Image" style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete JS tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- this is third row -->
+ <div class="container my-5">
+  <div class="row g-4">
+<hr/>
+    <!-- Course Card 1 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-100">
+       
+        <!-- Fixed-size Image -->
+        <div class="position-relative">
+          <img src="/assets/img/teachers/7.png" class="course-img" alt="Course Image"style="padding: 13px; border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete HTML tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 2 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-100">
+        <div class="position-relative">
+          <img src="/assets/img/teachers/8.webp" class="course-img" alt="Course Image" style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete CSS tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Card 3 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-100">
+        <div class="position-relative">
+          <img src="/assets/img/teachers/9.webp" class="course-img" alt="Course Image" style="padding: 13px;border-radius: 13px;">
+          <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">10 videos</span>
+        </div>
+        <div class="card-body text-center">
+          <p class="mb-3">complete JS tutorial</p>
+          <button class="btn btn-primary w-100">View Playlist</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+   
+
+
+    
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" class="btn btn-outline-success rounded-circle">
+  <a href="#" style="text-decoration: none;">↑</a>
+</button>
+    
+<!-- this is footer  -->
+<!-- ====== Footer Section ====== -->
+<footer class="footer" style="margin-top: 1vh;">
+  <div class="footer-container">
+    
+    <!-- Company -->
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="working.html">About Us</a></li>
+        <li><a href="working.html">Terms of Service</a></li>
+        <li><a href="working.html">Data Security</a></li>
+        <li><a href="working.html">TeachBharat</a></li>
+        <li><a href="working.html">Privacy Policy</a></li>
+        <li><a href="working.html">Warranty Policy</a></li>
+        <li><a href="working.html">Installation Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="working.html">Blog</a></li>
+        <li><a href="working.html">Glossary</a></li>
+        <li><a href="working.html">Digital Board</a></li>
+        <li><a href="working.html">K-12 Schools</a></li>
+        <li><a href="working.html">Higher Education</a></li>
+        <li><a href="working.html">Coaching</a></li>
+        <li><a href="working.html">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><strong>pune</strong><br>
+        3rd Floor, North Wing,<br>
+        SJR The Hub, JM Main Road,<br>
+        pune - 413010, maharashtra, India
+      </p>
+      <p><strong>solapur</strong><br>
+        11th Floor, Insular Life Building,<br>
+        6781 Ayala Avenue, Corner Paseo de Roxas,<br>
+        solapur - 413001 ,maharashtra, India
+      </p>
+      <p><strong>delhi</strong><br>
+        4 sarojani Road,<br>
+        No. 25-01, Bank of india Building,<br>
+        india 
+      </p>
+      <p><strong>E-mail:</strong> <a href="mailto:sushantatakare9@email.com">support@teachmint.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:8308901007">8308901007</a><br>
+        (IST 8 AM - 8 PM Everyday)
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom Row -->
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <img src="/assets/icons/New folder/pfizer.png" alt="Logo" height="35">
+    </div>
+    <p>© Copyright 2025, speed-up Inof tech Pvt. Ltd.</p>
+    <div class="footer-socials">
+      <a href="#"><img src="/assets/icons/New folder/linkedin.png" alt="LinkedIn" width="24"></a>
+      <a href="#"><img src="/assets/icons/New folder/facebook.png" alt="Facebook" width="24"></a>
+      <a href="#"><img src="/assets/icons/New folder/instagram.png" alt="Instagram" width="24"></a>
+      <a href="#"><img src="/assets/icons/New folder/github.png" alt="Twitter" width="24"></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

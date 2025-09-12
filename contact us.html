@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.contact-section {
+  min-height: 100vh;
+  background: url("/assets/img/julian-hochgesang-psGV5KhidlY-unsplash.jpg") no-repeat center center/cover; /* 🔹 put your image here */
+  position: relative;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 450px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+    </style>
+</head>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/bootstrap-5.3.8-dist/css/bootstrap.css">
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a id="logo" class="navbar-brand" href="#" style="font-size: 23px;">Speedup</a>
+
+    <!-- Toggler (on right side for small screens) -->
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <!-- Nav links -->
+      <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-auto" style="gap: 30px;">
+        <li class="nav-item">
+          <a class="nav-link " href="home.html" style="font-size: 25px; font-family: navbar">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact us.html" style="font-size: 25px; font-family: navbar">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="what we do.html" style="font-size: 25px; font-family: navbar;">What We Do</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html" style="font-size: 25px; font-family: navbar;">DASHBOARD</a>
+        </li>
+      </ul>
+
+      <!-- Buttons -->
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-primary" type="button">
+          <a style="text-decoration: none;" href="login.html">login</a>
+        </button>
+        <button class="btn btn-outline-success" type="button">
+          <a style="text-decoration: none;" href="signup.html">sign in</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="contact-section d-flex justify-content-center align-items-center">
+  <div class="contact-form p-4  shadow w-100" style="border-radius: 30px;">
+    <h3 class="text-center mb-4 text-white">Contact Us</h3>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label class="form-label text-light">Name</label>
+        <input type="text" class="form-control bg-transparent text-white border-light" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-light">Email</label>
+        <input type="email" class="form-control bg-transparent text-white border-light" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-light">Message</label>
+        <textarea class="form-control bg-transparent text-white border-light" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-light d-block mx-auto px-5">
+        Submit
+      </button>
+    </form>
+    <div id="responseMsg" class="alert alert-success mt-3 d-none text-center">
+      ✅ Thank you! We will contact you soon.
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- this is footer  -->
+<!-- ====== Footer Section ====== -->
+<footer class="footer" style="margin-top: 1vh;">
+  <div class="footer-container">
+    
+    <!-- Company -->
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="working.html">About Us</a></li>
+        <li><a href="working.html">Terms of Service</a></li>
+        <li><a href="working.html">Data Security</a></li>
+        <li><a href="working.html">TeachBharat</a></li>
+        <li><a href="working.html">Privacy Policy</a></li>
+        <li><a href="working.html">Warranty Policy</a></li>
+        <li><a href="working.html">Installation Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="working.html">Blog</a></li>
+        <li><a href="working.html">Glossary</a></li>
+        <li><a href="working.html">Digital Board</a></li>
+        <li><a href="working.html">K-12 Schools</a></li>
+        <li><a href="working.html">Higher Education</a></li>
+        <li><a href="working.html">Coaching</a></li>
+        <li><a href="working.html">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><strong>pune</strong><br>
+        3rd Floor, North Wing,<br>
+        SJR The Hub, JM Main Road,<br>
+        pune - 413010, maharashtra, India
+      </p>
+      <p><strong>solapur</strong><br>
+        11th Floor, Insular Life Building,<br>
+        6781 Ayala Avenue, Corner Paseo de Roxas,<br>
+        solapur - 413001 ,maharashtra, India
+      </p>
+      <p><strong>delhi</strong><br>
+        4 sarojani Road,<br>
+        No. 25-01, Bank of india Building,<br>
+        india 
+      </p>
+      <p><strong>E-mail:</strong> <a href="mailto:sushantatakare9@email.com">support@teachmint.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:8308901007">8308901007</a><br>
+        (IST 8 AM - 8 PM Everyday)
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom Row -->
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <img src="/assets/icons/New folder/pfizer.png" alt="Logo" height="35">
+    </div>
+    <p>© Copyright 2025, speed-up Inof tech Pvt. Ltd.</p>
+    <div class="footer-socials">
+      <a href="#"><img src="/assets/icons/New folder/linkedin.png" alt="LinkedIn" width="24"></a>
+      <a href="#"><img src="/assets/icons/New folder/facebook.png" alt="Facebook" width="24"></a>
+      <a href="#"><img src="/assets/icons/New folder/instagram.png" alt="Instagram" width="24"></a>
+      <a href="#"><img src="/assets/icons/New folder/github.png" alt="Twitter" width="24"></a>
+    </div>
+  </div>
+</footer>
+
+   <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script> 
+   
+</body>
+</html>
