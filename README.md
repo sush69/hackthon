@@ -80,6 +80,6 @@ User-specific dashboards with personalized data.
 Admin panel for managing courses and users.
 
 
-demo link to project https://tiny-brioche-61d82e.netlify.app/
+demo link to project : https://speedup-hackthon.netlify.app/
 
 
