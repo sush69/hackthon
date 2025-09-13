@@ -134,7 +134,47 @@
       </form>
     </div>
 
-  <script>
+
+
+    <script>
+  document
+    .getElementById("registerForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Regex for password validation
+      const passwordRegex =
+        /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{5,}$/;
+
+      if (!passwordRegex.test(password)) {
+        alert(
+          "Password must contain at least:\n- 1 capital letter\n- 1 number\n- 1 special symbol\n- Minimum length of 5 characters"
+        );
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return;
+      }
+
+      const user = {
+        name: name,
+        username: username,
+        password: password,
+      };
+
+      localStorage.setItem(username, JSON.stringify(user));
+      alert("Registration successful! Please login.");
+      window.location.href = "login.html";
+    });
+</script>
+<!--   <script>
       document
         .getElementById("registerForm")
         .addEventListener("submit", function (event) {
@@ -160,6 +200,7 @@
           alert("Registration successful! Please login.");
           window.location.href = "login.html";
         });
-    </script> 
+    </script>  -->
   </body>
 </html>
+
